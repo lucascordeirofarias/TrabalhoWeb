@@ -1,0 +1,292 @@
+.imagem-produto {
+    max-width: 100%; 
+    height: 400px; 
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+}
+
+section {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-block: min(20vh, 5rem);
+  text-align: center;
+  margin-inline: auto;
+}
+section p,
+section h2,
+section h3 {
+  letter-spacing: 0.035rem;
+}
+section p {
+  line-height: 1.7;
+  color: #ffffff;
+  max-width: 70rem;
+  margin: 0 auto;
+  font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+}
+section h2 {
+  font-size: clamp(3rem, 2.4286rem + 2.2857vw, 5rem);
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+section .cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: 2rem;
+}
+
+section .cards .card {
+  position: relative;
+  text-align: left;
+}
+section .cards .card .social-icon {
+  background: #111;
+  padding: 1rem 1.75rem;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+section .cards .card .social-icon i {
+  color: #fff;
+  font-size: 1.4rem;
+}
+section .cards .card .social-icon:hover i {
+  color: #003ef5;
+}
+section .cards .card img {
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+section .cards .card img:hover {
+  filter: grayscale(0%);
+}
+section .cards .card .card-content-wrapper {
+  margin-left: auto;
+  max-width: 90%;
+}
+section .cards .card .card-content-wrapper .card-content {
+  display: block;
+  background: white;
+  transition: 0.5s ease;
+  padding: 4.5rem 2rem 0 3.2rem;
+}
+section .cards .card .card-content-wrapper .card-content > div {
+  text-align: right;
+}
+section .cards .card .card-content-wrapper .card-content h3,
+section .cards .card .card-content-wrapper .card-content p {
+  text-transform: capitalize;
+}
+section .cards .card .card-content-wrapper .card-content h3 {
+  font-size: clamp(1.15rem, 1.1071rem + 0.1714vw, 1.3rem);
+  font-weight: 800;
+  color: #000000;
+}
+section .cards .card .card-content-wrapper .card-content p {
+  color: #000000;
+  font-size: 0.9rem;
+}
+section .cards .card .card-content-wrapper .card-content svg {
+  display: inline-block;
+  text-align: right;
+  width: 60px;
+  color: #000000;
+}
+section .cards .card .card-img-wrapper:hover ~ .card-content-wrapper .card-content {
+  background: #000000;
+}
+section .cards .card .card-img-wrapper:hover ~ .card-content-wrapper .card-content h3,
+section .cards .card .card-img-wrapper:hover ~ .card-content-wrapper .card-content p,
+section .cards .card .card-img-wrapper:hover ~ .card-content-wrapper .card-content svg {
+  color: #ffffff;
+}
+section .cards .card .card-content-wrapper:hover .card-content {
+  background: #000000;
+}
+section .cards .card .card-content-wrapper:hover .card-content h3,
+section .cards .card .card-content-wrapper:hover .card-content p,
+section .cards .card .card-content-wrapper:hover .card-content svg {
+  color: #fff;
+}
+
+
+
+ body {
+	 margin: 0;
+	 min-width: 320px;
+	 background: #1a1a24;
+	 font-family: 'Lato', sans-serif;
+	 color: #ddd;
+	 font-weight: 300;
+}
+ .container {
+	 margin: 0 auto;
+	 padding: 0 20px;
+}
+ @media (min-width: 1200px) {
+	 .container {
+		 max-width: 1200px;
+	}
+}
+ .quick-fact {
+	 margin-top: 120px;
+	 padding: 20px;
+	 border: 1px solid #ccc;
+	 border-radius: 20px;
+}
+ .quick-fact p {
+	 margin: 0;
+}
+ .quick-fact__img {
+	 margin-top: -120px;
+	 margin-bottom: 20px;
+	 text-align: center;
+}
+ .quick-fact__img img {
+	 max-width: 100%;
+	 height: auto;
+	 border-radius: 34% 66% 70% 30% / 30% 30% 70% 70%;
+	 box-shadow: 20px 10px 0 -5px rgba(0, 0, 0, 0.5), -2px 15px 0 -5px rgba(0, 0, 0, 0.5);
+}
+ @media (min-width: 768px) {
+	 .quick-fact {
+		 display: flex;
+		 align-items: center;
+		 gap: 40px;
+		 margin: 40px 0;
+		 padding: 20px 40px;
+	}
+	 .quick-fact h2 {
+		 margin: 0;
+	}
+	 .quick-fact__img {
+		 flex: 0 0 auto;
+		 max-width: 20%;
+		 margin-top: auto;
+		 margin-bottom: auto;
+		 margin-left: -60px;
+	}
+	 .quick-fact__content {
+		 display: flex;
+		 align-items: center;
+		 width: 100%;
+	}
+	 .quick-fact__title {
+		 border-right: 1px solid #ccc;
+		 flex-basis: fit-content;
+		 margin-right: 20px;
+		 padding-right: 20px;
+	}
+	 .quick-fact__desc {
+		 flex: 1 0 66.6666666667%;
+	}
+}
+ 
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  color: #ffffff;
+  background: #1a1a24;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.faq-header{
+  font-size: 42px;
+  border-bottom: 1px dotted #ffffff;
+  padding: 104px;
+  margin-left: 200px; /* Ajuste o valor conforme necessário */
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+.center-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
